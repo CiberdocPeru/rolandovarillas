@@ -1,6 +1,6 @@
 :root{
   --bg:#f9f5ee; --card:#fdfaf5; --mint:#ebf1e4; --icon:#dce9d8;
-  --green:#2f6049; --ink:#1e2a22; --muted:#56655b; --line:#e6dfd2;
+  --green:#1d5239; --ink:#1e2a22; --muted:#56655b; --line:#e6dfd2;
   --serif:'Fraunces',Georgia,serif; --sans:'Outfit',system-ui,sans-serif;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
