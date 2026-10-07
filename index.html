@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dr. Rolando Varillas · Psiquiatra . Psicoterapeuta</title>
 <meta name="description" content="Atención psiquiátrica humana, confidencial y basada en evidencia. Consulta presencial en San Borja y en línea.">
@@ -27,10 +28,10 @@
 
 <header><div class="wrap nav">
   <a class="brand" href="#top"><svg><use href="#i-heart"/></svg>Dr. Rolando Varillas</a>
-  <nav class="menu" aria-label="Principal">
-    <a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#articulos">Artículos</a><a href="#testimonios">Testimonios</a><a href="#agendar">Agendar</a>
+  <nav class="menu" id="menu" aria-label="Principal">
+    <a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#articulos">Artículos</a><a href="#agendar">Agendar</a>
   </nav>
-  <div class="nav-r"><a class="btn sm" href="#agendar">Agendar cita</a></div>
+  <div class="nav-r"><a class="btn sm" href="#agendar">Agendar cita</a><button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></div>
 </div></header>
 
 <main>
@@ -81,15 +82,15 @@
     <article class="card art"><small>Depresión</small><h3>La Depresión tiene sus razones</h3>
       <p>Ante todo primero es necesario diferenciar aflicción de depresión. Aflicción es una respuesta natural frente a una determinada situación como una pérdida o frustración y cuya presentación es usualmente breve y no va más allá de las dos semanas de duración. Aun cuando aquí el dolor emocional es de grado variable, gracias a los recursos personales y al apoyo de familiares y/o amigos dicho mal momento termina por resolverse.</p>
       <details><summary>Leer más</summary><p>La depresión no es un capricho o una debilidad, La depresión es una respuesta del organismo en su conjunto, ante un evento particular o a una sucesión de hechos en la biografía de una persona. Así en ocasiones uno alcanza a identificar al evento causante del dolor emocional intenso y del cual incluso se podría señalar fecha y hora de inicio, o en ocasiones se debe al acumulo de hechos negativos a lo largo de la vida de la persona y ante la cual presentada una dificultad menor, termina por ser esta la gota que rebalsa el vaso.</p>
-<a href="https://rolandovarillas.blogspot.com/2014/09/por-que-me-deprimo.html"target="_blank">Leer artículo completo</a>
+<a href="https://rolandovarillas.blogspot.com/2014/09/por-que-me-deprimo.html" target="_blank" rel="noopener">Leer artículo completo</a>
 </details></article>
     <article class="card art"><small>Carácter</small><h3>El Carácter Emprendedor</h3>
       <p>El espíritu empresarial es nato o se hace?. El tema del emprendimiento ha sido materia de interés en la literatura de economía y negocios y sin duda es un tópico materia de desarrollo ya que no sólo abarca nuestra área de trabajo si no además las diferentes actividades del quehacer humano.</p>
       <details><summary>Leer más</summary><p>El emprendedor tiene como una de sus principales características las disposición original y propia que lo orienta a la realización de algo, en este caso ese algo es la realización de un proyecto, un logro, un objetivo. A diferencia de las personas con otro perfil, el emprendedor no requiere o no necesita de la motivación externa o en todo caso ésta no es la determinante quien define su disposición o iniciativa. El emprendedor tiene en sí ese móvil,  esa pasión que lo dispone hacia, tal vez el término académico proactividad podría graficar dicha inclinación.</p>
-<a href="https://rolandovarillas.blogspot.com/2012/03/el-caracter-emprendedor.html"target="_blank">Leer artículo completo</a></details></article>
-    <article class="card art"><small>Temor · 6 min</small><h3>Ante el Temor al Éxito</h3>
+<a href="https://rolandovarillas.blogspot.com/2012/03/el-caracter-emprendedor.html" target="_blank" rel="noopener">Leer artículo completo</a></details></article>
+    <article class="card art"><small>Temor</small><h3>Ante el Temor al Éxito</h3>
       <p>En ocasiones la razón puede orientarnos en un sentido y la emoción en el sentido contrario. Así aunque alguien pueda formalmente declarar su anhelo de éxito,  emocionalmente puede boicotear el mismo, ello debido a que el éxito, como otras cosas, tiene un significado distinto para cada individuo.</p>
-      <details><summary>Leer más</summary><p>Conseguir el éxito promete un estado de disfrute y bienestar, sin embargo para algunas personas lo relevante de una  situación de éxito pueden ser sus nuevas exigencias, ser sujeto de críticas o una mayor exposición. Así, ante la posibilidad de un nuevo contexto  la persona puede sentir que no está preparado para manejar dicha situación, siendo entonces el éxito un estado a evitar.</p><a href="https://rolandovarillas.blogspot.com/2014/06/ante-el-temor-al-exito.html"target="_blank">Leer artículo completo</a></details></article>
+      <details><summary>Leer más</summary><p>Conseguir el éxito promete un estado de disfrute y bienestar, sin embargo para algunas personas lo relevante de una  situación de éxito pueden ser sus nuevas exigencias, ser sujeto de críticas o una mayor exposición. Así, ante la posibilidad de un nuevo contexto  la persona puede sentir que no está preparado para manejar dicha situación, siendo entonces el éxito un estado a evitar.</p><a href="https://rolandovarillas.blogspot.com/2014/06/ante-el-temor-al-exito.html" target="_blank" rel="noopener">Leer artículo completo</a></details></article>
   </div>
   
 </div></section>
@@ -108,7 +109,7 @@
   </div>
   <form class="f" id="f" novalidate>
     <label class="full">Nombre completo<input id="n" autocomplete="name"></label>
-    <label>Teléfono<input id="t" type="tel" autocomplete="tel"></label>
+    <label>Teléfono<span class="tel"><select id="cc" aria-label="Prefijo del país" autocomplete="tel-country-code"><option value="51" selected>Perú +51</option><option value="54">Argentina +54</option><option value="591">Bolivia +591</option><option value="55">Brasil +55</option><option value="1">Canadá +1</option><option value="56">Chile +56</option><option value="57">Colombia +57</option><option value="506">Costa Rica +506</option><option value="53">Cuba +53</option><option value="593">Ecuador +593</option><option value="503">El Salvador +503</option><option value="34">España +34</option><option value="1">Estados Unidos +1</option><option value="33">Francia +33</option><option value="49">Alemania +49</option><option value="502">Guatemala +502</option><option value="504">Honduras +504</option><option value="39">Italia +39</option><option value="52">México +52</option><option value="505">Nicaragua +505</option><option value="507">Panamá +507</option><option value="595">Paraguay +595</option><option value="1">Puerto Rico +1</option><option value="1">Rep. Dominicana +1</option><option value="44">Reino Unido +44</option><option value="598">Uruguay +598</option><option value="58">Venezuela +58</option></select><input id="t" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="999 999 999" aria-label="Número de teléfono"></span></label>
     <label>Modalidad<select id="m"><option>Presencial</option><option>En línea</option></select></label>
     <label class="full">Mensaje <textarea id="r"></textarea></label>
     <p class="err full" id="err" role="alert"></p>
@@ -127,9 +128,6 @@
           <a href="https://linkedin.com/in/usuario" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://youtube.com/@usuario" target="_blank" rel="noopener">YouTube</a>
         </div></div>
-    </div>
-  </div>
-  
 </div></section>
 
 
@@ -139,47 +137,33 @@
 <a class="wa-fab" id="wa3" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
 
 <script>
-// CONFIGURACIÓN: edita estos datos
+// CONFIGURACIÓN: edita este dato
 var WHATSAPP="51999177788";
-var DIRECCION="Avenida Guardia Civil 197, San Borja, Perú";
-var SERVICIOS=[{n:"Primera consulta",p:200},{n:"Consulta de control",p:150},{n:"Videoconsulta",p:150}];
-var YAPE_NUMERO="999 177 788", YAPE_TITULAR="Dr. Rolando Varillas";
-// Pega aquí tu enlace de pago (Mercado Pago, Culqi, Niubiz, PayPal.me). Vacío = el botón de tarjeta se oculta.
-var LINK_TARJETA="";
 
 var $=function(i){return document.getElementById(i)};
 var wa=function(t){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t)};
-var MAPS="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(DIRECCION);
-$("wa2").href=$("wa3").href=wa("Hola Dr. Varillas, quisiera agendar una cita.");
-$("dir").textContent=$("dirtxt").textContent=DIRECCION;
-$("mapa").href=$("dir2").href=MAPS;
-$("d").min=new Date().toISOString().slice(0,10);
+$("wa3").href=wa("Hola Dr. Varillas, quisiera agendar una cita.");
 
 $("f").addEventListener("submit",function(e){
   e.preventDefault();
   var g=function(i){return $(i).value.trim()};
-  if(!g("n")||!g("t")||!g("d")){$("err").textContent="Completa tu nombre, teléfono y fecha preferida.";return}
+  var num=g("t").replace(/\D/g,"").replace(/^0+/,"");
+  if(!g("n")||num.length<6){$("err").textContent="Completa tu nombre y un teléfono válido.";return}
   $("err").textContent="";
-  var t="Hola Dr. Varillas, quisiera agendar una cita.\n\nNombre: "+g("n")+"\nTeléfono: "+g("t")+"\nMotivo: "+g("mo")+"\nModalidad: "+g("m")+"\nFecha preferida: "+g("d")+"\nHorario: "+g("h")+(g("r")?"\nMensaje: "+g("r"):"");
+  var t="Hola Dr. Varillas, quisiera agendar una cita.\n\nNombre: "+g("n")+"\nTeléfono: +"+g("cc")+" "+num+"\nModalidad: "+g("m")+(g("r")?"\nMensaje: "+g("r"):"");
   window.open(wa(t),"_blank","noopener");
 });
 
-SERVICIOS.forEach(function(s,i){var o=document.createElement("option");o.value=i;o.textContent=s.n;$("srv").appendChild(o)});
-function pintarPago(){
-  var s=SERVICIOS[$("srv").value];
-  $("monto").textContent="S/ "+s.p.toFixed(2);
-  $("tarjeta").hidden=!LINK_TARJETA;
-  if(LINK_TARJETA)$("tarjeta").href=LINK_TARJETA;
-  $("comprobante").href=wa("Hola Dr. Varillas, realicé el pago de "+s.n+" (S/ "+s.p.toFixed(2)+"). Adjunto mi comprobante.");
-}
-$("srv").addEventListener("change",pintarPago);
-$("yn").textContent=YAPE_NUMERO;$("ytitular").textContent=YAPE_TITULAR;
-$("copiar").addEventListener("click",function(){
-  var b=$("copiar");
-  try{navigator.clipboard.writeText(YAPE_NUMERO.replace(/\s/g,"")).then(function(){b.textContent="Número copiado"},function(){b.textContent="Copia el número manualmente"})}
-  catch(e){b.textContent="Copia el número manualmente"}
+var mb=$("burger"),mn=$("menu");
+function cerrarMenu(){mn.classList.remove("open");mb.setAttribute("aria-expanded","false");mb.setAttribute("aria-label","Abrir menú")}
+mb.addEventListener("click",function(){
+  var o=mn.classList.toggle("open");
+  mb.setAttribute("aria-expanded",o);
+  mb.setAttribute("aria-label",o?"Cerrar menú":"Abrir menú");
 });
-pintarPago();
+mn.addEventListener("click",function(e){if(e.target.tagName==="A")cerrarMenu()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")cerrarMenu()});
+window.addEventListener("resize",function(){if(window.innerWidth>900)cerrarMenu()});
 </script>
 </body>
 </html>
