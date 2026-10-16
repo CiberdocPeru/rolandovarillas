@@ -19,6 +19,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
 svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+}.monogram{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:var(--navy);color:white;font:500 17px "Playfair Display",serif}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.2rem;color:var(--ink)}
 .brand svg{width:20px;height:20px;color:var(--accent)}
