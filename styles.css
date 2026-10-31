@@ -36,7 +36,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 .hero h1 em{color:var(--accent);font-style:italic}
 .hero p.lead{max-width:430px;color:var(--muted);margin:26px 0 32px}
 .cta{display:flex;align-items:center;gap:32px;flex-wrap:wrap}
-.photo-wrap{position:relative;justify-self:end;width:100%;max-width:470px}
+.photo-wrap{position:relative;justify-self:end;width:100%;max-width:329px}
 .photo{aspect-ratio:4/5.0;border-radius:32px;overflow:hidden;position:relative;box-shadow:0 30px 60px -25px rgba(47,96,73,.35);
   background:linear-gradient(90deg,#e9e2d4 0,#efe9dc 45%,#dfe2d6 100%)}
 .photo .shelf{position:absolute;left:0;top:0;bottom:0;width:26%;background:repeating-linear-gradient(180deg,#a8794a 0 3px,#c79a69 3px 62px)}
@@ -44,7 +44,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 .photo .chair{position:absolute;left:34%;bottom:12%;width:44%;height:30%;background:#6f7a52;border-radius:28px 28px 12px 12px;box-shadow:inset 0 -14px 0 #5b6542}
 .photo .rug{position:absolute;left:18%;right:-4%;bottom:0;height:16%;background:#a9b8bb;opacity:.7}
 .badge{position:absolute;left:-40px;bottom:-26px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 18px;box-shadow:0 14px 30px -12px rgba(0,0,0,.2)}
-.badge b{display:block;font-family:var(--serif);font-weight:400;font-size:1.7rem;color:var(--accent);line-height:1.1}
+.badge b{display:block;font-family:var(--serif);font-weight:400;font-size:1.2rem;color:var(--accent);line-height:1.1}
 .badge span{font-size:.78rem;color:var(--muted)}
 
 .about{background:var(--mint);text-align:center;padding:76px 0 84px}
